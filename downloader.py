@@ -5,7 +5,7 @@ def download(video_link):
     youtube_object = YouTube(video_link)
     youtube_object = youtube_object.streams.get_highest_resolution()
     try:
-        youtube_object.download(r'C:\Users\Forbidden\Desktop\Downloads')
+        youtube_object.download(r'C:\your_path\Downloads')
     except ValueError:
         return "There has been an error in downloading your youtube video!"
     return "This download has completed!"
